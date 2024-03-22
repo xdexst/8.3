@@ -1,21 +1,12 @@
-#ifndef WIDGET_H
-#define WIDGET_H
+#ifndef MACHINE_H
+#define MACHINE_H
 
-#include <QMainWindow>
-
-QT_BEGIN_NAMESPACE
-namespace Ui { class widget; }
-QT_END_NAMESPACE
-
-class widget : public QMainWindow
-{
-    Q_OBJECT
-
+class Machine {
 public:
-    widget(QWidget *parent = nullptr);
-    ~widget();
-
-private:
-    Ui::widget *ui;
+    int X;
+    int P;
+    int V;
+    Machine();
 };
-#endif // WIDGET_H
+
+#endif

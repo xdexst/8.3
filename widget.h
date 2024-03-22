@@ -1,12 +1,28 @@
-#ifndef MACHINE_H
-#define MACHINE_H
+#ifndef WIDGET_H
+#define WIDGET_H
 
-class Machine {
+#include <QWidget>
+#include <QPushButton>
+#include <QVBoxLayout>
+#include <QLineEdit>
+#include <QLabel>
+
+class Widget : public QWidget {
+    Q_OBJECT
+
 public:
-    int X;
-    int P;
-    int V;
-    Machine();
+    Widget(QWidget *parent = nullptr);
+    ~Widget();
+
+private:
+    QPushButton *nextbtn;
+    QPushButton *backbtn;
+    QLabel *aboutcar;
+    QVBoxLayout *qvbl;
+
+private slots:
+    void nextCar();
+    void backCar();
 };
 
 #endif

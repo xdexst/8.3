@@ -1,11 +1,12 @@
 #ifndef MACHINE_H
 #define MACHINE_H
 
-
-class machine
-{
+class Machine {
 public:
-    machine();
+    int X;
+    int P;
+    int V;
+    Machine();
 };
 
-#endif // MACHINE_H
+#endif
